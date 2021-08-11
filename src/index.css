@@ -20,6 +20,8 @@ code {
 
 body {
   background-color: bisque;
+  position: relative;
+  min-height: 100vh;
 }
 /* Header Styles */
 .nav {
@@ -27,6 +29,7 @@ body {
   z-index: 1000;
   width: 100%;
   height: 5%;
+  top: 0%;
   /* margin-top: -1.1em; */
   display: flex;
   background: rgb(145, 124, 118);
@@ -153,6 +156,7 @@ body {
 .home-container {
   padding: 2em;
   padding-top: 5em;
+  padding-bottom: 20em;
 }
 
 .load-btn-container {
@@ -178,8 +182,6 @@ body {
   border: 2px solid rgb(105, 54, 37);
 }
 
-.items {
-}
 /* Item Style */
 .item-container {
   background-color: cornsilk;
@@ -188,27 +190,27 @@ body {
   border-radius: 5px;
 }
 
-.item-container:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
 .upper-container {
   height: 40%;
   text-align: center;
   justify-content: center;
 }
-
+.upper-container:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
 .image-container {
   display: flex;
   position: relative;
   text-align: center;
   justify-content: center;
+  background-color: honeydew;
+  background-size: contain;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 .image-container > img {
-  width: 100%;
+  /* width: /; */
   height: 200px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -312,7 +314,7 @@ body {
 /* Footer Styles */
 .footer {
   width: 100%;
-  position: relative;
+  position: absolute;
   bottom: 0%;
 }
 .footer-container {
@@ -331,4 +333,515 @@ body {
 .footer-list li {
   padding: 10px;
   color: antiquewhite;
+}
+
+/* Product Info Page */
+.product-info-container {
+  margin-left: 10em;
+  margin-right: 10em;
+  padding-bottom: 20em;
+}
+.product-tags-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  padding-top: 5em;
+  list-style-type: none;
+}
+
+.product-tags-list > li > h4 {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.product-tags-list li {
+  display: inline-block;
+  padding: 0.4em;
+  color: blue;
+}
+
+.product-tags-list > li > h4 {
+  color: black;
+}
+
+.product-info-section {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-section {
+  width: 70%;
+}
+
+.product-image-container {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-size: contain;
+  background-color: honeydew;
+}
+
+.product-image-container > img {
+  background-size: contain;
+  width: inherit;
+  border-radius: 5px;
+  height: inherit;
+}
+
+.prev-icon {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+}
+
+.next-icon {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+}
+
+.image-count {
+  position: absolute;
+  right: 3%;
+  top: 90%;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.product-description-container {
+  padding: 0.7em;
+  margin-top: 1.2em;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: inherit;
+  height: max-content;
+  background-color: honeydew;
+}
+
+.product-description {
+  font-family: "Montserrat", open-sans;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.right-section {
+  width: 20vw;
+}
+
+.product-details {
+  box-sizing: border-box;
+  border: 1px solid rgb(90, 89, 89);
+  border-radius: 5px;
+  background-color: honeydew;
+  padding: 0.5em;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.product-like-icon {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+}
+
+.seller-description {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgb(90, 89, 89);
+  border-radius: 5px;
+  background-color: honeydew;
+  padding: 0.5em;
+  margin-top: 1.5em;
+}
+
+.seller-description > h3 {
+  text-align: start;
+}
+
+.seller-details-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.seller-details-list li {
+  padding: 10px;
+  display: inline-block;
+}
+/* 
+.circle-avatar {
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+} */
+
+.seller-profile-image {
+  border: 3px solid black;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.seller-name {
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+
+.seller-name > h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.seller-name p {
+  font-size: 0.8rem;
+}
+
+.seller-details-list:hover {
+  opacity: 0.8;
+}
+
+.to-chat-btn {
+  width: 100%;
+  padding: 0.6em;
+  color: #fff;
+  background-color: forestgreen;
+  font-family: "Montserrat";
+  border: 1px solid peachpuff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 0.3em;
+}
+
+.to-chat-btn:hover {
+  background-color: lightpink;
+  color: aliceblue;
+  border: 2px solid pink;
+}
+
+.ad-details {
+  display: flex;
+  margin-top: 2px;
+  padding: 1px;
+  justify-content: space-between;
+}
+
+.ad-details li {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Montserrat", open-sans;
+  color: #7c7c7c;
+}
+
+#report-ad:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #b8b7b7;
+}
+
+/* Chat Page Styles */
+.chat-page {
+  margin: 0 10em;
+  width: 80%;
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  margin-top: 7em;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+}
+
+.chat-left-section {
+  display: inline-block;
+  width: 40%;
+  height: 80vh;
+  background-color: honeydew;
+  border-right: 1px solid gainsboro;
+  margin: 0;
+  padding: 0;
+}
+
+.inbox {
+  padding: 1em;
+  background-color: gainsboro;
+  border: 1px solid rgb(78, 78, 78, 0.3);
+  border-right: none;
+  border-top-left-radius: 7px;
+}
+
+.inbox > h1 {
+  text-transform: uppercase;
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.quick-filters {
+  padding: 1em;
+}
+.quick-filters > p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.filters-list {
+  display: flex;
+  justify-content: start;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0.8em;
+}
+
+.filters-list li {
+  display: inline-block;
+  background-color: lavender;
+  padding: 0.5em;
+  margin-left: 1em;
+  border: 0.5px solid lightslategrey;
+  border-radius: 2em;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.chat-users-list {
+  overflow-y: scroll;
+  height: 70%;
+}
+
+.chat-profile {
+  max-height: 300px;
+  /* overflow-y: scroll; */
+}
+
+.chat-profile-user {
+  border-bottom: 0.6px solid rgb(91, 96, 102, 0.3);
+  cursor: pointer;
+}
+
+.chat-profile-user li {
+  margin: auto 0;
+}
+#chat-delete-user-icon {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+#chat-delete-user-icon:hover {
+  opacity: 0.7;
+}
+
+.chat-right-section {
+  margin: 0;
+  display: inline-block;
+  width: 61%;
+  height: 80vh;
+  background-color: gainsboro;
+  padding: 0;
+}
+
+.header-chat {
+  margin: 0;
+  padding: 1em;
+  background-color: whitesmoke;
+  border: 1px solid rgb(78, 78, 78, 0.3);
+  border-top-right-radius: 7px;
+}
+
+.chat-user-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.1em;
+  list-style-type: none;
+  margin: 0;
+}
+
+.chat-user-header li {
+  display: inline-block;
+  margin: auto 0;
+}
+
+.hor-list-chat-header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0.4em;
+}
+
+.hor-list-chat-header li {
+  display: inline-block;
+  padding: 0 0.5em;
+  margin: auto 0;
+}
+
+.chat-user-profile {
+  border-radius: 10px;
+  height: 50px;
+  width: 60px;
+}
+
+.header-chat-icon {
+  display: flex;
+  justify-content: start;
+  padding: 0 1em;
+  margin: auto 0;
+}
+
+.header-chat-icon li {
+  display: inline-block;
+  padding-right: 1em;
+  margin-right: 0.8em;
+  cursor: pointer;
+}
+
+#imp-flag {
+  height: 25px;
+  width: 25px;
+}
+#delete-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.header-chat-icon li:hover {
+  opacity: 0.7;
+}
+
+.realtime-chat {
+  width: 100%;
+  height: 77.5%;
+  background-color: lightyellow;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid gainsboro;
+  overflow-y: scroll;
+}
+
+.type-chat {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  border: 0.6px solid hsl(0, 4%, 10%);
+}
+
+.type-chat > input {
+  padding: 0.5em;
+  width: 90%;
+  font-size: 1.1rem;
+  font-family: "Montserrat", Open-sans;
+  font-weight: w500;
+  border: none;
+  border-right: 0.4px solid black;
+}
+
+.type-chat > input:focus {
+  border: none;
+}
+
+.send-icon {
+  display: inline-block;
+  width: 10%;
+  background-color: lightgreen;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.send-icon:hover {
+  background-color: lime;
+  lighting-color: lime;
+}
+
+#send-chat-icon {
+  height: 30px;
+  width: 80%;
+  color: rgb(61, 61, 185);
+  margin: auto;
+  padding: 0.4em;
+}
+
+.chat-users-list::-webkit-scrollbar,
+.realtime-chat::-webkit-scrollbar {
+  display: none;
+}
+
+/* .realtime-chat > div {
+  margin-top: 1em;
+} */
+.chat-messages {
+  padding: 0.3em;
+}
+
+.other-chat {
+  background-color: lightgreen;
+  position: relative;
+  left: 2%;
+}
+
+.self-chat {
+  background-color: lightskyblue;
+  position: relative;
+  right: 2%;
+  left: 78%;
+}
+
+.chat-bubble {
+  border: 0.7px solid lightpink;
+  padding: 1em;
+  font-size: 0.7rem;
+  font-family: "Montserrat", open-Sans;
+  font-weight: w400;
+  display: inline-block;
+  border-radius: 8px;
+  max-width: 20ch;
+  overflow-y: visible;
+  color: black;
+}
+
+.chat-bubble > span {
+  padding: 0.5em;
+  font-size: 0.5rem;
+  color: hsla(0, 0%, 0%, 0.842);
+  font-weight: w500;
+}
+
+.sized-box {
+  height: 1em;
+  width: 100%;
+  opacity: 0;
+}
+
+/* login page stylings */
+.login-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
