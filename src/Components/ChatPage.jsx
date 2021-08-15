@@ -2,7 +2,48 @@ import React from "react";
 import { RiDeleteBin6Fill, RiSendPlane2Fill } from "react-icons/ri";
 import { FaFlag, FaRegFlag } from "react-icons/fa";
 
+import { ChatUserProfile } from "./index";
+
 const ChatPage = () => {
+  const chats = [
+    {
+      id: 1,
+      sellerName: "Draupadi",
+      itemName: "Saaree",
+      itemPrice: 200,
+      userProfile:
+        "https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg",
+      chatFlagged: false,
+    },
+    {
+      id: 2,
+      sellerName: "Maandavi",
+      itemName: "Saaree",
+      itemPrice: 200,
+      userProfile:
+        "https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg",
+      chatFlagged: false,
+    },
+    {
+      id: 4,
+      sellerName: "Kaushal",
+      itemName: "Saaree",
+      itemPrice: 200,
+      userProfile:
+        "https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg",
+      chatFlagged: false,
+    },
+    {
+      id: 5,
+      sellerName: "Drishti",
+      itemName: "Saaree",
+      itemPrice: 200,
+      userProfile:
+        "https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg",
+      chatFlagged: false,
+    },
+  ];
+
   return (
     <div className="chat-page">
       <div className="chat-left-section">
@@ -18,204 +59,9 @@ const ChatPage = () => {
           </ul>
         </div>
         <div className="no-scroll-bar chat-users-list">
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
-          <div className="chat-profile">
-            <ul className="seller-details-list chat-profile-user">
-              <li>
-                <img
-                  className="seller-profile-image footer-list"
-                  src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                  alt="profile-image"
-                />
-              </li>
-              <li className="seller-name">
-                <h5>Name</h5>
-                <p>Item Name</p>
-              </li>
-              <li>
-                <RiDeleteBin6Fill id="chat-delete-user-icon" />
-              </li>
-            </ul>
-          </div>
+          {chats.map((chat) => (
+            <ChatUserProfile key={chat["id"]} currChat={chat} />
+          ))}
         </div>
       </div>
       <div className="chat-right-section">

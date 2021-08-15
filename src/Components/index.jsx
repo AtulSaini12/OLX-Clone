@@ -8,6 +8,7 @@ import SubFooter from "./SubFooter";
 import ProductInfoPage from "./ProductInfoPage";
 import ChatPage from "./ChatPage";
 import Login from "./Login";
+import ChatUserProfile from "./ChatUserProfile";
 
 export {
   Header,
@@ -19,4 +20,5 @@ export {
   SubFooter,
   ProductInfoPage,
   ChatPage,
+  ChatUserProfile,
 };
