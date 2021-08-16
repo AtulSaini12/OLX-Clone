@@ -133,6 +133,10 @@ body {
   color: #fff;
 }
 
+#login {
+  color: #fff;
+}
+
 .nav-links ul li {
   font-size: 1rem;
   text-decoration: none;
@@ -146,7 +150,8 @@ body {
   padding-right: 5em;
 }
 
-.nav-links ul li:hover {
+.nav-links ul li:hover,
+#login:hover {
   text-decoration: underline;
   color: #d0d0d0;
   cursor: pointer;
@@ -921,4 +926,132 @@ body {
   background-position: left;
   font-weight: 600;
   border: 0.6px solid gainsboro;
+}
+
+/* User Profile */
+.user-profile {
+  margin: 6em 5em;
+  height: 100%;
+  width: 90%;
+}
+
+.upper-profile-container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.image-container-profile {
+  height: 200px;
+  width: 200px;
+  border: 1px dotted black;
+  border-radius: 50%;
+}
+
+.user-profile-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.user-details-profile > h3 {
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0.7em;
+}
+
+.user-details-profile > p {
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-left: 0.45em;
+}
+
+h4 {
+  margin: 0;
+  padding: 0.7em;
+}
+
+.linked-accounts-profile {
+  display: flex;
+  justify-content: start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linked-accounts-profile li {
+  margin: 0;
+  padding: 0.6em 2em;
+}
+
+#google-icon-profile,
+#mail-icon-profile {
+  height: 25px;
+  width: 25px;
+}
+
+.upper-right-user-profile {
+  width: 100%;
+}
+
+.followers-following-profile {
+  padding-top: 1em;
+}
+
+.followers-following-list-profile {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.followers-profile-num,
+.following-profile-num {
+  list-style-type: none;
+  text-align: center;
+}
+
+.followers-profile-num li,
+.following-profile-num li,
+.divider-profile {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #7c7c7c;
+}
+
+.divider-profile {
+  font-size: 3rem;
+  color: #a8a5a5;
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+}
+
+#following-number,
+#followers-number {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: black;
+  font-family: "Montserrat";
+}
+
+.edit-profile-btn {
+  width: 90%;
+  margin: 1em auto;
+  text-align: center;
+  border: 1px solid black;
+  background-color: honeydew;
+  padding: 0.2em;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Montserrat";
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.edit-profile-btn:hover {
+  border-width: 4px;
+  padding: 0.01em;
 }

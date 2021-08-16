@@ -29,11 +29,9 @@ export default function Header() {
       <div className="right-nav">
         <div className="nav-links">
           <ul>
-            <li id="login">
-              <Link to="/login" style={{ textDecoration: "none" }}>
-                Log in
-              </Link>
-            </li>
+            <Link to="/login">
+              <li id="login">Log in</li>
+            </Link>
             <li id="register">Register</li>
           </ul>
         </div>

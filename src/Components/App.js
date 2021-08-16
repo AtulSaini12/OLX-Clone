@@ -12,6 +12,7 @@ import {
   ProductInfoPage,
   ChatPage,
   Login,
+  UserProfile,
 } from "./index";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/productInfo" component={ProductInfoPage} />
             <Route path="/chat" component={ChatPage} />
             <Route path="/login" component={Login} />
+            <Route path="/profile" component={UserProfile} />
           </Switch>
         </div>
       </Router>

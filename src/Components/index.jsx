@@ -9,7 +9,8 @@ import ProductInfoPage from "./ProductInfoPage";
 import ChatPage from "./ChatPage";
 import Login from "./Login";
 import ChatUserProfile from "./ChatUserProfile";
-
+import UserProfile from "./UserProfile";
+import ChatWithUser from "./ChatWithUser";
 export {
   Header,
   Login,
@@ -21,4 +22,6 @@ export {
   ProductInfoPage,
   ChatPage,
   ChatUserProfile,
+  UserProfile,
+  ChatWithUser,
 };
