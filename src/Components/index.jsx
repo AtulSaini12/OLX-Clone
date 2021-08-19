@@ -11,6 +11,8 @@ import Login from "./Login";
 import ChatUserProfile from "./ChatUserProfile";
 import UserProfile from "./UserProfile";
 import ChatWithUser from "./ChatWithUser";
+import PostAdPage from "./PostAdPage";
+
 export {
   Header,
   Login,
@@ -24,4 +26,5 @@ export {
   ChatUserProfile,
   UserProfile,
   ChatWithUser,
+  PostAdPage,
 };

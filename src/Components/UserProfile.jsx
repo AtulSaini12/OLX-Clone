@@ -52,7 +52,20 @@ const UserProfile = () => {
             <div className="edit-profile-btn">Edit Profile</div>
           </div>
         </div>
-        <div className="lower-profile-container"></div>
+        <div className="lower-profile-container">
+          <h3>Personal Details :</h3>
+          <ul className="personal-details-list">
+            <li>
+              Email Id : <span>abc@def.com</span>
+            </li>
+            <li>
+              Contact Number : <span>+91 9874653029</span>
+            </li>
+            <li>
+              Address : <span>new house, kentsbury, USA</span>
+            </li>
+          </ul>
+        </div>
       </div>
       <Footer />
     </div>

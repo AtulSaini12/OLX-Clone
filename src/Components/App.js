@@ -13,6 +13,7 @@ import {
   ChatPage,
   Login,
   UserProfile,
+  PostAdPage,
 } from "./index";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/chat" component={ChatPage} />
             <Route path="/login" component={Login} />
             <Route path="/profile" component={UserProfile} />
+            <Route path="/postAd" component={PostAdPage} />
           </Switch>
         </div>
       </Router>

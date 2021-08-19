@@ -32,7 +32,9 @@ export default function Header() {
             <Link to="/login">
               <li id="login">Log in</li>
             </Link>
-            <li id="register">Register</li>
+            <Link to="/postAd">
+              <li id="register">+ Sell</li>
+            </Link>
           </ul>
         </div>
       </div>
