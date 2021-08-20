@@ -36,7 +36,7 @@ body {
   padding: 1em 1em;
   align-items: center;
   justify-content: space-between;
-  opacity: 0.9;
+  opacity: 1;
 }
 .left-div {
   margin-left: 2em;
@@ -205,11 +205,12 @@ body {
   box-sizing: border-box;
   color: aliceblue;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .load-btn:hover {
   background-color: rgb(133, 55, 27);
-
+  cursor: pointer;
   border: 2px solid rgb(105, 54, 37);
 }
 
@@ -226,10 +227,7 @@ body {
   text-align: center;
   justify-content: center;
 }
-.upper-container:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
+
 .image-container {
   display: flex;
   position: relative;
@@ -300,6 +298,12 @@ body {
 .item-footer-list > li {
   display: inline-block;
   padding: 10px;
+}
+
+.lower-container:hover,
+.image-container > img:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 /* Sub Footer Styles */
@@ -839,10 +843,11 @@ body {
   background-color: lightskyblue;
   position: relative;
   right: 2%;
-  left: 78%;
+  left: 75%;
 }
 
 .chat-bubble {
+  max-width: 30ch;
   border: 0.7px solid lightpink;
   padding: 1em;
   font-size: 0.7rem;
@@ -850,13 +855,12 @@ body {
   font-weight: w400;
   display: inline-block;
   border-radius: 8px;
-  max-width: 20ch;
   overflow-y: visible;
   color: black;
 }
 
 .chat-bubble > span {
-  padding: 0.5em;
+  padding: 0.3em;
   font-size: 0.5rem;
   color: hsla(0, 0%, 0%, 0.842);
   font-weight: w500;

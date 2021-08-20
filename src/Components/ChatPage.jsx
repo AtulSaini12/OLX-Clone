@@ -1,8 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 
 import { ChatUserProfile, ChatWithUser } from "./index";
 
 const ChatPage = () => {
+  const [currUser, setcurrUser] = useState(null);
   const chats = [
     {
       id: 1,
@@ -42,6 +45,14 @@ const ChatPage = () => {
     },
   ];
 
+  const chatWith = (id) => {
+    const user = chats.filter((chat) => {
+      return chat["id"] == id;
+    });
+    setcurrUser(user);
+    console.log("user : ", user);
+  };
+
   return (
     <div className="chat-page">
       <div className="chat-left-section">
@@ -58,11 +69,15 @@ const ChatPage = () => {
         </div>
         <div className="no-scroll-bar chat-users-list">
           {chats.map((chat) => (
-            <ChatUserProfile key={chat["id"]} currChat={chat} />
+            <ChatUserProfile
+              key={chat["id"]}
+              currChat={chat}
+              handleClick={chatWith}
+            />
           ))}
         </div>
       </div>
-      <ChatWithUser />
+      <ChatWithUser user={currUser} />
     </div>
   );
 };
